@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Foodie Corner | Delicious Food</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">🍔 Foodie Corner</h1>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#menu" class="cart-btn"> 🛒 Order Now </a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tagline">FRESH FOOD • HAPPY MOOD</p>
+
+        <h2>
+          Delicious Food<br />
+          Delivered To Your Door
+        </h2>
+
+        <p class="hero-text">
+          Discover your favourite meals, prepared with love and delivered fresh
+          to your doorstep.
+        </p>
+
+        <a href="#menu" class="main-btn"> Explore Our Menu 🍕 </a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85"
+          alt="Delicious food"
+        />
+      </div>
+    </section>
+
+    <!-- FOOD CATEGORIES SECTION -->
+
+    <section class="categories" id="menu">
+      <h2>Explore Our Menu 🍽️</h2>
+
+      <p class="section-text">Your favourite food, all in one place!</p>
+
+      <!-- PIZZA -->
+      <h2 class="food-heading">🍕 Pizza</h2>
+
+      <div class="food-container">
+        <div class="food-card">
+          <img src="image/margherita.jpg" alt="Margherita Pizza" />
+          <h3>Margherita Pizza</h3>
+          <p>Classic cheese pizza</p>
+          <h4>₹149</h4>
+          <button onclick="addToCart('Margherita Pizza', 149)">
+            Add to Cart 🛒
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img src="image/farmhouse.jpg" alt="Farmhouse Pizza" />
+
+          <h3>Farmhouse Pizza</h3>
+          <p>Loaded with vegetables</p>
+          <h4>₹229</h4>
+          <button onclick="addToCart('Farmhouse Pizza', 229)">
+            Add to Cart 🛒
+          </button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=500&q=80"
+     alt="Corn Cheese Pizza">
+
+          <h3>Cheese Corn Pizza</h3>
+          <p>Sweet corn and loaded cheese</p>
+          <h4>₹179</h4>
+          <button onclick="addToCart('Cheese Corn Pizza', 179)">
+            Add to Cart 🛒
+          </button>
+        </>
+
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80"
+            alt="Paneer Tikka Pizza"
+          />
+          <h3>Paneer Tikka Pizza</h3>
+          <p>Spicy paneer with delicious toppings</p>
+          <h4>₹249</h4>
+          <button onclick="addToCart('Paneer Tikka Pizza', 249)">
+            Add to Cart 🛒
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=500&q=80"
+            alt="Veggie Supreme Pizza"
+          />
+          <h3>Veggie Supreme Pizza</h3>
+          <p>Loaded with fresh vegetables</p>
+          <h4>₹269</h4>
+          <button onclick="addToCart('Veggie Supreme Pizza', 269)">
+            Add to Cart 🛒
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=500&q=80"
+            alt="Double Cheese Pizza"
+          />
+          <h3>Double Cheese Pizza</h3>
+          <p>Extra cheese for cheese lovers</p>
+          <h4>₹199</h4>
+          <button onclick="addToCart('Double Cheese Pizza', 199)">
+            Add to Cart 🛒
+          </button>
+        </div>
+      </div>
+
+
+        <h2>🍝 Pasta Corner</h2>
+
+        <div class="food-container">
+          <div class="food-card">
+            <img src="image/white-sauce-pasta.jpg" alt="White Sauce Pasta" />
+            <h3>White Sauce Pasta</h3>
+            <p>Creamy white sauce pasta with herbs and cheese.</p>
+            <p class="price">₹149</p>
+            <button onclick="addToCart('White Sauce Pasta', 149)">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-card">
+            <img src="image/red-sauce-pasta.jpg" alt="Red Sauce Pasta" />
+            <h3>Red Sauce Pasta</h3>
+            <p>Italian-style pasta tossed in tangy tomato sauce.</p>
+            <p class="price">₹139</p>
+            <button onclick="addToCart('Red Sauce Pasta', 139)">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-card">
+            <img src="image/pink-sauce-pasta.jpg" alt="Pink Sauce Pasta" />
+            <h3>Pink Sauce Pasta</h3>
+            <p>A delicious combination of creamy and tomato sauce.</p>
+            <p class="price">₹159</p>
+            <button onclick="addToCart('Pink Sauce Pasta', 159)">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-card">
+            <img src="image/cheese-pasta.jpg" alt="Cheese Pasta" />
+            <h3>Cheese Pasta</h3>
+            <p>Cheesy pasta loaded with rich, delicious flavours.</p>
+            <p class="price">₹169</p>
+            <button onclick="addToCart('Cheese Pasta', 169)">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-card">
+            <img src="image/masala-pasta.jpg" alt="Indian Masala Pasta" />
+            <h3>Indian Masala Pasta</h3>
+            <p>Spicy Indian-style pasta with vegetables and masala.</p>
+            <p class="price">₹129</p>
+            <button onclick="addToCart('Indian Masala Pasta', 129)">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-card">
+            <img src="image/alfredo-pasta.jpg" alt="Alfredo Pasta" />
+            <h3>Alfredo Pasta</h3>
+            <p>Rich and creamy Alfredo pasta with Italian herbs.</p>
+            <p class="price">₹179</p>
+            <button onclick="addToCart('Alfredo Pasta', 179)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </>
+
+      <!-- NOODLES -->
+      <h2 class="food-heading">🍜 Noodles</h2>
+
+      <div class="food-container">
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80"
+            alt="Hakka Noodles"
+          />
+          <h3>Hakka Noodles</h3>
+          <p>Classic Chinese noodles</p>
+          <h4>₹129</h4>
+          <button onclick="addToCart('Hakka Noodles', 129)">
+            Add to Cart 🛒
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=500&q=80"
+            alt="Spicy Noodles"
+          />
+          <h3>Schezwan Noodles</h3>
+          <p>Spicy and flavourful</p>
+          <h4>₹149</h4>
+          <button onclick="addToCart('Schezwan Noodles', 149)">
+            Add to Cart 🛒
+          </button>
+        </div>
+        <div class="food-card">
+          <img src="image/veg-noodles.jpg" alt="Veg Hakka Noodles" />
+          <h3>Veg Hakka Noodles</h3>
+          <p>Delicious noodles tossed with fresh vegetables.</p>
+          <p class="price">₹99</p>
+          <button onclick="addToCart('Veg Hakka Noodles', 99)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="image/chilli-garlic-noodles.jpg"
+            alt="Chilli Garlic Noodles"
+          />
+          <h3>Chilli Garlic Noodles</h3>
+          <p>Spicy noodles with garlic and special sauces.</p>
+          <p class="price">₹119</p>
+          <button onclick="addToCart('Chilli Garlic Noodles', 119)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img src="image/schezwan-noodles.jpg" alt="Schezwan Noodles" />
+          <h3>Schezwan Noodles</h3>
+          <p>Hot and spicy noodles with Schezwan sauce.</p>
+          <p class="price">₹129</p>
+          <button onclick="addToCart('Schezwan Noodles', 129)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="food-card">
+          <img src="image/paneer-noodles.jpg" alt="Paneer Noodles" />
+          <h3>Paneer Noodles</h3>
+          <p>Flavorful noodles tossed with soft paneer cubes.</p>
+          <p class="price">₹139</p>
+          <button onclick="addToCart('Paneer Noodles', 139)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+  
+    <h2>🥪 Sandwich Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/veg-sandwich.jpg" alt="Veg Sandwich">
+        <h3>Veg Sandwich</h3>
+        <p>Fresh vegetables with delicious green chutney.</p>
+        <p class="price">₹79</p>
+        <button onclick="addToCart('Veg Sandwich', 79)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/grilled-sandwich.jpg" alt="Grilled Sandwich">
+        <h3>Grilled Sandwich</h3>
+        <p>Crispy grilled sandwich filled with fresh veggies.</p>
+        <p class="price">₹99</p>
+        <button onclick="addToCart('Grilled Sandwich', 99)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cheese-sandwich.jpg" alt="Cheese Sandwich">
+        <h3>Cheese Sandwich</h3>
+        <p>Loaded with melted cheese and tasty seasonings.</p>
+        <p class="price">₹109</p>
+        <button onclick="addToCart('Cheese Sandwich', 109)">
+            Add to Cart
+        </button>
+    </div
+      </div>
+
+      
+    <!-- MOMOS -->
+<h2 class="food-heading">🥟 Momos Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/steamed-momos.jpg" alt="Steamed Momos">
+        <h3>Steamed Veg Momos</h3>
+        <p>Soft steamed momos served with spicy chutney.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Steamed Veg Momos', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/fried-momos.jpg" alt="Fried Momos">
+        <h3>Fried Momos</h3>
+        <p>Crispy golden momos with delicious filling.</p>
+        <h4>₹119</h4>
+        <button onclick="addToCart('Fried Momos', 119)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/tandoori-momos.jpg" alt="Tandoori Momos">
+        <h3>Tandoori Momos</h3>
+        <p>Smoky tandoori momos coated with spicy masala.</p>
+        <h4>₹149</h4>
+        <button onclick="addToCart('Tandoori Momos', 149)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/kurkure-momos.jpg" alt="Kurkure Momos">
+        <h3>Kurkure Momos</h3>
+        <p>Extra crispy momos with a crunchy coating.</p>
+        <h4>₹139</h4>
+        <button onclick="addToCart('Kurkure Momos', 139)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/afghani-momos.jpg" alt="Afghani Momos">
+        <h3>Afghani Momos</h3>
+        <p>Creamy momos tossed in a rich, flavourful sauce.</p>
+        <h4>₹159</h4>
+        <button onclick="addToCart('Afghani
+      </div>
+
+      
+     <!-- SPRING ROLLS -->
+<h2 class="food-heading">🥢 Spring Rolls</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/veg-spring-rolls.jpg" alt="Veg Spring Rolls">
+        <h3>Veg Spring Rolls</h3>
+        <p>Crispy rolls stuffed with fresh vegetables.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Veg Spring Rolls', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/paneer-spring-rolls.jpg" alt="Paneer Spring Rolls">
+        <h3>Paneer Spring Rolls</h3>
+        <p>Crunchy rolls filled with spicy paneer.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Paneer Spring Rolls', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cheese-spring-rolls.jpg" alt="Cheese Spring Rolls">
+        <h3>Cheese Spring Rolls</h3>
+        <p>Golden crispy rolls with a cheesy filling.</p>
+        <h4>₹139</h4>
+        <button onclick="addToCart('Cheese Spring Rolls', 139)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/corn-spring-rolls.jpg" alt="Corn Spring Rolls">
+        <h3>Corn Spring Rolls</h3>
+        <p>Sweet corn and vegetables wrapped in crispy rolls.</p>
+        <h4>₹119</h4>
+        <button onclick="addToCart('Corn Spring Rolls', 119)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/schezwan-spring-rolls.jpg" alt="Schezwan Spring Rolls">
+        <h3>Schezwan Spring Rolls</h3>
+        <p>Spicy rolls packed with delicious Schezwan flavour.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Schezwan Spring Rolls', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/chilli-spring-rolls.jpg" alt="Chilli Spring Rolls">
+        <h3>Chilli Spring Rolls</h3>
+        <p>Crispy rolls tossed in a spicy chilli sauce.</p>
+        <h4>₹149</h4>
+        <button onclick="addToCart('Chilli Spring Rolls', 149)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+      </>
+
+  
+     <!-- BURGER -->
+<h2 class="food-heading">🍔 Burger Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/classic-burger.jpg" alt="Classic Veg Burger">
+        <h3>Classic Veg Burger</h3>
+        <p>Crispy veggie patty with fresh lettuce and sauce.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Classic Veg Burger', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cheese-burger.jpg" alt="Cheese Burger">
+        <h3>Cheese Burger</h3>
+        <p>Delicious veggie patty topped with melted cheese.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Cheese Burger', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/paneer-burger.jpg" alt="Paneer Burger">
+        <h3>Paneer Burger</h3>
+        <p>Spiced paneer patty with creamy burger sauce.</p>
+        <h4>₹149</h4>
+        <button onclick="addToCart('Paneer Burger', 149)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/alo-tikki-burger.jpg" alt="Aloo Tikki Burger">
+        <h3>Aloo Tikki Burger</h3>
+        <p>Indian-style potato patty with tangy chutney.</p>
+        <h4>₹89</h4>
+        <button onclick="addToCart('Aloo Tikki Burger', 89)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/double-cheese-burger.jpg" alt="Double Cheese Burger">
+        <h3>Double Cheese Burger</h3>
+        <p>Double cheese, veggie patty and rich creamy sauce.</p>
+        <h4>₹169</h4>
+        <button onclick="addToCart('Double Cheese Burger', 169)">
+      </div>
+
+      
+     <!-- CHAAT -->
+<h2 class="food-heading">🥗 Chaat Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/pani-puri.jpg" alt="Pani Puri">
+        <h3>Pani Puri</h3>
+        <p>Crispy puris filled with spicy tangy water.</p>
+        <h4>₹49</h4>
+        <button onclick="addToCart('Pani Puri', 49)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/aloo-tikki-chaat.jpg" alt="Aloo Tikki Chaat">
+        <h3>Aloo Tikki Chaat</h3>
+        <p>Crispy potato tikki topped with chutneys and curd.</p>
+        <h4>₹79</h4>
+        <button onclick="addToCart('Aloo Tikki Chaat', 79)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/papdi-chaat.jpg" alt="Papdi Chaat">
+        <h3>Papdi Chaat</h3>
+        <p>Crispy papdi with yogurt and sweet-spicy chutneys.</p>
+        <h4>₹69</h4>
+        <button onclick="addToCart('Papdi Chaat', 69)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/dahi-bhalla.jpg" alt="Dahi Bhalla">
+        <h3>Dahi Bhalla</h3>
+        <p>Soft bhallas topped with creamy yogurt and chutneys.</p>
+        <h4>₹89</h4>
+        <button onclick="addToCart('Dahi Bhalla', 89)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/bhel-puri.jpg" alt="Bhel Puri">
+        <h3>Bhel Puri</h3>
+        <p>Crunchy puffed rice mixed with vegetables and chutneys.</p>
+        <h4>₹59</h4>
+        <button onclick="addToCart('Bhel Puri', 59)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/sev-puri.jpg" alt="Sev Puri">
+        <h3>Sev Puri</h3>
+        <p>Crispy puris topped with potatoes, chutneys and sev.</p>
+        <h4>₹69</h4>
+        <button onclick="addToCart('Sev Puri', 69)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+      </>
+
+      <!-- DRINKS -->
+<h2 class="food-heading">🥤 Drinks Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/cold-coffee.jpg" alt="Cold Coffee">
+        <h3>Cold Coffee</h3>
+        <p>Chilled, creamy coffee with a rich flavour.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Cold Coffee', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/fresh-lime-soda.jpg" alt="Fresh Lime Soda">
+        <h3>Fresh Lime Soda</h3>
+        <p>Refreshing lime soda with a tangy twist.</p>
+        <h4>₹59</h4>
+        <button onclick="addToCart('Fresh Lime Soda', 59)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/lemon-iced-tea.jpg" alt="Lemon Iced Tea">
+        <h3>Lemon Iced Tea</h3>
+        <p>Chilled tea with a refreshing lemon flavour.</p>
+        <h4>₹79</h4>
+        <button onclick="addToCart('Lemon Iced Tea', 79)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/chocolate-milkshake.jpg" alt="Chocolate Milkshake">
+        <h3>Chocolate Milkshake</h3>
+        <p>Thick chocolate shake with a creamy texture.</p>
+        <h4>₹119</h4>
+        <button onclick="addToCart('Chocolate Milkshake', 119)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/mango-shake.jpg" alt="Mango Shake">
+        <h3>Mango Shake</h3>
+        <p>Sweet and creamy mango drink.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Mango Shake', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/oreo-shake.jpg" alt="Oreo Milkshake">
+        <h3>Oreo Milkshake</h3>
+        <p>A delicious cookie milkshake with creamy goodness.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Oreo Milkshake', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+      
+
+    <!-- MOCKTAILS -->
+<h2 class="food-heading">🍹 Mocktails Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/blue-lagoon.jpg" alt="Blue Lagoon">
+        <h3>Blue Lagoon</h3>
+        <p>A refreshing blue mocktail with a citrusy twist.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Blue Lagoon', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/virgin-mojito.jpg" alt="Virgin Mojito">
+        <h3>Virgin Mojito</h3>
+        <p>Fresh mint, lime and sparkling soda.</p>
+        <h4>₹119</h4>
+        <button onclick="addToCart('Virgin Mojito', 119)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/strawberry-mojito.jpg" alt="Strawberry Mojito">
+        <h3>Strawberry Mojito</h3>
+        <p>Sweet strawberry flavour with mint and lime.</p>
+        <h4>₹139</h4>
+        <button onclick="addToCart('Strawberry Mojito', 139)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/watermelon-mocktail.jpg" alt="Watermelon Mocktail">
+        <h3>Watermelon Splash</h3>
+        <p>Juicy watermelon with a refreshing citrus flavour.</p>
+        <h4>₹109</h4>
+        <button onclick="addToCart('Watermelon Splash', 109)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/mango-mocktail.jpg" alt="Mango Mocktail">
+        <h3>Mango Magic</h3>
+        <p>A tropical mango mocktail with a sweet, fruity taste.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Mango Magic', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/pink-lemonade.jpg" alt="Pink Lemonade">
+        <h3>Pink Lemonade</h3>
+        <p>A tangy, sweet and refreshing pink citrus drink.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Pink Lemonade', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+      
+<!-- COFFEE -->
+<h2 class="food-heading">☕ Coffee Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/espresso.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Rich and bold coffee with an intense flavour.</p>
+        <h4>₹79</h4>
+        <button onclick="addToCart('Espresso', 79)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cappuccino.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Smooth coffee topped with creamy milk foam.</p>
+        <h4>₹119</h4>
+        <button onclick="addToCart('Cappuccino', 119)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cafe-latte.jpg" alt="Cafe Latte">
+        <h3>Café Latte</h3>
+        <p>Espresso blended with warm, silky milk.</p>
+        <h4>₹129</h4>
+        <button onclick="addToCart('Cafe Latte', 129)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/mocha.jpg" alt="Mocha Coffee">
+        <h3>Chocolate Mocha</h3>
+        <p>A delicious combination of coffee and chocolate.</p>
+        <h4>₹149</h4>
+        <button onclick="addToCart('Chocolate Mocha', 149)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/americano.jpg" alt="Americano">
+        <h3>Americano</h3>
+        <p>Classic coffee with a smooth, bold taste.</p>
+        <h4>₹99</h4>
+        <button onclick="addToCart('Americano', 99)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/caramel-latte.jpg" alt="Caramel Latte">
+        <h3>Caramel Latte</h3>
+        <p>Creamy latte with sweet caramel flavour.</p>
+        <h4>₹159</h4>
+        <button onclick="addToCart('Caramel Latte', 159)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+
+      
+
+  <!-- TEA -->
+<h2 class="food-heading">🫖 Tea Corner</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/masala-chai.jpg" alt="Masala Chai">
+        <h3>Masala Chai</h3>
+        <p>Traditional Indian tea with aromatic spices.</p>
+        <h4>₹30</h4>
+        <button onclick="addToCart('Masala Chai', 30)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/ginger-tea.jpg" alt="Ginger Tea">
+        <h3>Ginger Tea</h3>
+        <p>Refreshing tea infused with fresh ginger.</p>
+        <h4>₹35</h4>
+        <button onclick="addToCart('Ginger Tea', 35)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/green-tea.jpg" alt="Green Tea">
+        <h3>Green Tea</h3>
+        <p>Light and soothing tea with a delicate flavour.</p>
+        <h4>₹49</h4>
+        <button onclick="addToCart('Green Tea', 49)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/lemon-tea.jpg" alt="Lemon Tea">
+        <h3>Lemon Tea</h3>
+        <p>Refreshing tea with a zesty lemon flavour.</p>
+        <h4>₹39</h4>
+        <button onclick="addToCart('Lemon Tea', 39)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/kashmiri-kahwa.jpg" alt="Kashmiri Kahwa">
+        <h3>Kashmiri Kahwa</h3>
+        <p>Fragrant Kashmiri tea with warm spices.</p>
+        <h4>₹69</h4>
+        <button onclick="addToCart('Kashmiri Kahwa', 69)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/milk-tea.jpg" alt="Classic Milk Tea">
+        <h3>Classic Milk Tea</h3>
+        <p>Comforting milk tea brewed to perfection.</p>
+        <h4>₹25</h4>
+        <button onclick="addToCart('Classic Milk Tea', 25)">
+            Add to Cart 🛒
+        </button>
+    </div>
+
+</div>
+    </section>
+<!-- CUSTOMER DETAILS SECTION -->
+<section class="customer-section" id="customer-details">
+
+    <h2>🛵 Customer & Delivery Details</h2>
+    <p class="customer-subtitle">
+        Please enter your details for home delivery 💗
+    </p>
+
+    <form id="customerForm">
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName"
+                       name="firstName"
+                       placeholder="Enter first name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName"
+                       name="lastName"
+                       placeholder="Enter last name"
+                       required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile"
+                   name="mobile"
+                   placeholder="10-digit mobile number"
+                   inputmode="numeric"
+                   pattern="[6-9][0-9]{9}"
+                   maxlength="10"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address (Optional)</label>
+            <input type="email" id="email"
+                   name="email"
+                   placeholder="Enter your email">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="houseNo">House / Flat Number *</label>
+                <input type="text" id="houseNo"
+                       name="houseNo"
+                       placeholder="House or flat number"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street / Road Number *</label>
+                <input type="text" id="street"
+                       name="street"
+                       placeholder="Street or road"
+                       required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="landmark">Landmark</label>
+            <input type="text" id="landmark"
+                   name="landmark"
+                   placeholder="Near school, temple, shop, etc.">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Full Address *</label>
+            <textarea id="address"
+                      name="address"
+                      rows="3"
+                      placeholder="Enter your complete delivery address"
+                      required></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="city">City / Village *</label>
+                <input type="text" id="city"
+                       name="city"
+                       placeholder="Enter city or village"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State *</label>
+                <select id="state" name="state" required>
+                    <option value="">Select state</option>
+                    <option>Punjab</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Delhi</option>
+                    <option>Chandigarh</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Rajasthan</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="pincode">PIN Code *</label>
+            <input type="text" id="pincode"
+                   name="pincode"
+                   placeholder="6-digit PIN code"
+                   inputmode="numeric"
+                   pattern="[0-9]{6}"
+                   maxlength="6"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="instructions">Delivery Instructions (Optional)</label>
+            <textarea id="instructions"
+                      name="instructions"
+                      rows="2"
+                      placeholder="Any special delivery instructions?"></textarea>
+        </div>
+
+        <button type="submit" class="place-order-btn">
+            Confirm Details 💗
+        </button>
+
+        <p id="formMessage" aria-live="polite"></p>
+
+    </form>
+</section>
+   <!-- SHOPPING CART -->
+<section class="cart-section" id="cart">
+    <h2>🛒 Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty 🛒</p>
+    </div>
+
+    <div class="cart-total-box">
+        <h3>Total Bill: <span id="cart-total">₹0</span></h3>
+    </div>
+<!-- PAYMENT OPTIONS -->
+<div class="payment-section">
+
+    <h3>💳 Choose Payment Method</h3>
+
+    <label class="payment-option">
+        <input type="radio" name="paymentMethod"
+               value="UPI" required>
+        📱 UPI Payment
+    </label>
+
+    <label class="payment-option">
+        <input type="radio" name="paymentMethod"
+               value="Cash on Delivery" required>
+        💵 Cash on Delivery
+    </label>
+
+    <div id="upi-details" style="display:none;">
+        <label for="upi-id">Enter UPI ID</label>
+        <input type="text" id="upi-id"
+               placeholder="example@upi">
+        <p>Demo project: Real payment is not processed.</p>
+    </div>
+
+</div>
+  <button type="button" id="place-order-btn">
+    🛍️ Place Order
+</button>
+
+<div id="order-message" aria-live="polite"></div>
+</section>
+ <!-- CONTACT SECTION -->
+
+<section class="contact-section" id="contact">
+
+    <h2>📞 Contact Us</h2>
+
+    <p class="contact-subtitle">
+        We'd love to hear from you! 💗
+    </p>
+
+    <div class="contact-card">
+
+        <h3>🍕 Foodie Express</h3>
+
+        <p>
+            <strong>👩🏻‍💻 Created By:</strong>
+            Tania
+        </p>
+
+        <p>
+            <strong>🎓 College:</strong>
+            Baring Union Christian College, Batala
+        </p>
+
+        <p>
+            <strong>📧 Email:</strong>
+            <a href="mailto:taniamattu34@gmail.com">
+                taniamattu34@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>📱 Phone:</strong>
+            <a href="tel:+917837115991">
+                +91 78371 15991
+            </a>
+        </p>
+
+        <p>
+            <strong>💻 Project:</strong>
+            Food Delivery Website
+        </p>
+
+        <p class="contact-note">
+            Thank you for visiting Foodie Express! ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+  <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Welcome to Foodie Corner ❤️</h2>
+
+      <p>
+        We bring your favourite food to your table. Enjoy delicious meals,
+        explore different flavours and make every meal special with Foodie
+        Corner.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+      <h2>🍔 Foodie Corner</h2>
+
+      <p>Good Food. Good Mood. Great Memories.</p>
+
+      <p class="copyright">© 2026 Foodie Corner. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  
+        
+</body>
+</html>
